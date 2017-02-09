@@ -2,32 +2,18 @@
 /**
  * Write a description of class KeylessCar here.
  * 
- * @author (your name) 
+ * @author Esmeralda Lopez
  * @version (a version number or a date)
  */
-public class KeylessCar
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class KeylessCar
-     */
-    public KeylessCar()
-    {
-        // initialise instance variables
-        x = 0;
+public class KeylessCar extends Car{
+    public KeylessCar(int windows){
+        super(windows);
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public void turnOnEngine(){
+        System.out.println("You press the start engine button. The engine starts");
+    }
+    public void turnOffEngine(){
+        System.out.println("You press the start engine button. The engine turns off ");
     }
 }
+

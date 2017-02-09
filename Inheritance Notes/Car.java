@@ -8,7 +8,9 @@
 public class Car implements DriverlessCarRules{
     boolean seatbealtOn ;
     boolean engineOn ;
-    public Car(){
+    int windows;
+    public Car(int window){
+        windows = window;
         seatbealtOn = false;
         engineOn = false; 
     }
